@@ -19,7 +19,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
 		LOG.info(output)
 
 if __name__ == "__main__":
-	HOST, PORT = '130.211.91.121', 80
+	HOST, PORT = 'localhost', 9999
 
 server = SocketServer.TCPServer((HOST, PORT), MyTCPHandler)
 server.serve_forever()
