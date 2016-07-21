@@ -19,7 +19,7 @@ def handle(self):
   LOG.info(output)
 
 if __name__ == "__main__":
-  HOST, PORT = '192.168.1.25', 9999
+  HOST, PORT = '130.211.91.121', 80
 
 server = SocketServer.TCPServer((HOST, PORT), MyTCPHandler)
 server.serve_forever()
