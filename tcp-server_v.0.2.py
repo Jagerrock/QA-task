@@ -13,7 +13,7 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
 
     def handle(self):
         data = self.request.recv(1024).strip()
-	      LOG.info (data)
+	LOG.info (data)
         if data == self.commands[0]:
             my_replay = "help, date, myip"
         elif data == self.commands[1]:
